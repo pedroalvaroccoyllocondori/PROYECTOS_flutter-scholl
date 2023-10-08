@@ -12,7 +12,7 @@ class PaginaPerfil extends StatelessWidget {
         itemBuilder: (BuildContext context, int index) {
           return ListTile(
             title: Text('item ${(index + 1)}'),
-            leading: const Icon(Icons.pets_rounded),
+            leading: const Icon(Icons.restaurant),
             trailing: const Icon(Icons.select_all),
             onTap: () {
               debugPrint('item ${(index + 1)} selecionado');
