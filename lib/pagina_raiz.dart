@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:primera_app/carrusel.dart';
-import 'package:primera_app/pagina_perfil.dart';
+import 'package:primera_app/pagina_pedidos.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,7 +28,7 @@ class PaginaRaiz extends StatefulWidget {
 
 class _PaginaRaizState extends State<PaginaRaiz> {
   int paginaActual = 0;
-  List<Widget> paginas = [ProductCarouselPage(), PaginaPerfil()];
+  List<Widget> paginas = [const ProductCarouselPage(), PaginaPedidos()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,11 +40,14 @@ class _PaginaRaizState extends State<PaginaRaiz> {
         child: const Icon(Icons.add_business_sharp),
       ),
       bottomNavigationBar: NavigationBar(
+        backgroundColor: const Color.fromARGB(122, 251, 137, 103),
         destinations: const [
           NavigationDestination(
-              icon: Icon(Icons.restaurant_menu_outlined), label: "PRODUCTOS"),
+              icon: Icon(Icons.restaurant_menu_outlined, color: Colors.white),
+              label: "PRODUCTOS"),
           NavigationDestination(
-              icon: Icon(Icons.sell_outlined), label: "PEDIDOS")
+              icon: Icon(Icons.sell_outlined, color: Colors.white),
+              label: "PEDIDOS")
         ],
         onDestinationSelected: (int index) {
           setState(() {

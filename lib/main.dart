@@ -48,8 +48,7 @@ class WelcomePage extends StatelessWidget {
                 },
                 style: ButtonStyle(
                   padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
-                    EdgeInsets.all(
-                        20.0), // Ajusta el relleno según tus necesidades
+                    const EdgeInsets.all(20.0),
                   ),
                 ),
                 child: const Text(

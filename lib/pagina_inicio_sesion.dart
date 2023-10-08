@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:primera_app/carrusel.dart';
 import 'package:primera_app/pagina_raiz.dart';
 
 class PaginaInicioSesion extends StatefulWidget {
@@ -13,13 +12,11 @@ class _PaginaInicioSesionState extends State<PaginaInicioSesion> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[900], // Color de fondo
-
+      backgroundColor: Colors.blueGrey[900],
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage(
-                'images/welcome.jpg'), // Cambia esto por la ruta de tu imagen de fondo
+            image: AssetImage('images/welcome.jpg'),
             fit: BoxFit.cover,
           ),
         ),
@@ -35,33 +32,27 @@ class _PaginaInicioSesionState extends State<PaginaInicioSesion> {
                   height: 120,
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.orangeAccent, // Color del círculo
+                    color: Colors.orangeAccent,
                   ),
                   child: const Icon(
                     Icons.person,
                     size: 80,
-                    color: Colors.white, // Color del icono
+                    color: Colors.white,
                   ),
                 ),
                 const SizedBox(height: 20),
                 Container(
                   color: Colors.orangeAccent,
                   child: const TextField(
-                    style: TextStyle(
-                        color: Colors.grey), // Color del texto de entrada
+                    style: TextStyle(color: Colors.grey),
                     decoration: InputDecoration(
                       labelText: 'Correo Electrónico',
-                      labelStyle: TextStyle(
-                          color: Colors.white), // Color de la etiqueta
+                      labelStyle: TextStyle(color: Colors.white),
                       enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                            color: Colors
-                                .white), // Color del borde cuando no está enfocado
+                        borderSide: BorderSide(color: Colors.white),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                            color: Colors
-                                .white), // Color del borde cuando está enfocado
+                        borderSide: BorderSide(color: Colors.white),
                       ),
                     ),
                   ),
@@ -70,22 +61,16 @@ class _PaginaInicioSesionState extends State<PaginaInicioSesion> {
                 Container(
                   color: Colors.orangeAccent,
                   child: const TextField(
-                    style: TextStyle(
-                        color: Colors.white), // Color del texto de entrada
+                    style: TextStyle(color: Colors.white),
                     obscureText: true,
                     decoration: InputDecoration(
                       labelText: 'Contraseña',
-                      labelStyle: TextStyle(
-                          color: Colors.white), // Color de la etiqueta
+                      labelStyle: TextStyle(color: Colors.white),
                       enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                            color: Colors
-                                .white), // Color del borde cuando no está enfocado
+                        borderSide: BorderSide(color: Colors.white),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                            color: Colors
-                                .white), // Color del borde cuando está enfocado
+                        borderSide: BorderSide(color: Colors.white),
                       ),
                     ),
                   ),
@@ -100,7 +85,7 @@ class _PaginaInicioSesionState extends State<PaginaInicioSesion> {
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.orangeAccent, // Color del botón
+                    backgroundColor: Colors.orangeAccent,
                     padding: const EdgeInsets.symmetric(
                         horizontal: 40, vertical: 12),
                   ),
